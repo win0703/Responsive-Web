@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>MARGARINE</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+        <style>
+            * { 
+                margin: 0;
+                padding: 0;
+            }        
+
+            h4, p, ul {
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 500;
+            }
+
+            .container {
+                height: 1300px;
+                overflow: hidden;
+                background: rgb(54,54,70);
+                background: linear-gradient(90deg, rgba(54,54,70,1) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 80%, rgba(54,54,70,1) 100%);
+            }
+
+            .top {
+                position: relative;
+                z-index: 4;
+                height: 80px;
+                background-color: rgb(87, 113, 231);
+                
+            }
+
+            .Logo {
+                position: absolute;
+                z-index: 2;
+                float: left;
+                margin-left: 650px;
+                margin-top: 22px;
+                font-family: 'Lato', sans-serif;
+                font-weight: 900;
+            }
+
+            .Logo:hover {
+                color: #000;
+            }
+
+            .top ul {
+                position: relative;
+                left: -51px;
+            }
+
+            ul {
+                position: relative;
+                z-index: 2;
+                float: right;
+                margin-right: 627px;
+            }
+
+            summary {
+                position: relative;
+                z-index: 2;
+                float: right;
+            }
+
+            ul:nth-child(2) {
+                position: relative;
+                z-index: 2;
+                margin-right: 650px;
+            }
+
+            li {
+                position: relative;
+                z-index: 2;
+                float: left;
+                list-style: none;
+                padding: 10px;
+                margin-top: 20px;
+                margin-right: 12px;
+            }
+
+            .menuimg {
+                position: relative;
+                left: 1854px;
+                margin-top: 25px;
+            }
+
+            .right, .menu li:last-child {
+                position: relative;
+                z-index: 2;
+                margin-top: 16px;
+                font-size: 1.3em;
+                margin-right: 20px;
+            }
+
+            a {
+                color: black;
+                text-decoration-line: none;
+            }
+            
+            a:hover {
+                color: white;
+                
+            }
+
+            .menu {
+                position: relative;
+                z-index: 2;
+                height: 80px;
+                background: rgb(54,54,70);
+                background: linear-gradient(90deg, rgba(54,54,70,1) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 80%, rgba(54,54,70,1) 100%);
+                border-bottom-style: solid;
+                border-bottom-width: 1px;
+                border-bottom-color: gray;
+
+            }
+
+            .Search {
+                position: relative;
+                z-index: 2;
+                margin-top: 20px;
+                margin-left: 650px;
+            }
+
+            .Searchingtext {
+                position: relative;
+                z-index: 2;
+                top: -50px;
+                margin-left: 705px;
+                border-width: 0 0 1px;
+                width: 500px; height: 50px;
+                background-color: #000;
+            }
+
+            input {
+                font-size: 20px;
+                color: #fff;
+            }
+
+            .Cinema {
+                position: absolute;
+                z-index: 2;
+                margin-left: 714px;
+                margin-top: 660px;
+                width: 1120px; height: 420px;
+                overflow: hidden;
+            }
+
+            .Cinema1, .Cinema2, .Cinema3 {
+                position: relative;
+                z-index: 2;
+                float: left; margin-right: 40px;
+                width: 250px; height: 360px;
+                background-color: #000;
+                overflow: hidden;
+            }
+
+            .Cinema1 img:hover, .Cinema2 img:hover, .Cinema3 img:hover, .Cinema4 img:hover {
+                opacity: 25%;
+            }
+
+            .imgtext {
+                position: relative;
+                top: 120px;
+                width: 250px; height: 200px;
+                color: #fff;
+                text-align: center;
+            }
+
+            .Cinema1 img, .Cinema2 img, .Cinema3 img, .Cinema4 img {
+                position: relative;
+                top: -199px;
+            }
+
+            .Cinema4 {
+                float: left;
+                width: 250px; height: 360px;
+                background-color: #000;
+                overflow: hidden;
+            }
+
+            .Ticketing {
+                float: left; margin-top: 10px;
+                height: 50px; width: 1120px;
+            }
+
+            .Ticketing1, .Ticketing2, .Ticketing3 {
+                float: left;
+                width: 250px; height: 360px;
+                background-color: rgb(87, 113, 231);
+                text-align: center;
+                margin-right: 40px;
+            }
+
+            .Ticketing4 {
+                float: left;
+                width: 250px; height: 360px;
+                background-color: rgb(87, 113, 231);
+                text-align: center;
+            }
+
+            .Ticketing1 > h3, .Ticketing2 > h3, .Ticketing3 > h3, .Ticketing4 > h3 {
+                margin-top: 14px;
+                color: #000;
+            }
+
+            .Ticketing1:hover, .Ticketing2:hover, .Ticketing3:hover,.Ticketing4:hover {
+                background-color: white;
+            }
+
+            .Ticketing1 h3:hover, .Ticketing2 h3:hover, .Ticketing3 h3:hover, .Ticketing4 h3:hover {
+                color: rgb(87, 113, 231);
+            }
+
+            .event {
+                float: left; margin-left: 714px; margin-top: 45px;
+                height: 510px; width: 1120px;
+                overflow: hidden;
+            }
+            .event1 {
+                width: 540px; height: 162px; margin-bottom: 12px; margin-right: 12px;
+                background-image: url('layer.png'), url('이벤트_1.jpg');
+                background-size: 100%;
+                overflow: hidden;
+            }
+
+            .event2 {
+                float: left;
+                width: 540px; height: 162px; margin-bottom: 12px; margin-right: 12px;
+                background-image: url('layer.png'), url('이벤트_2.png');
+                background-size: 100%;
+                overflow: hidden;
+            }
+            .event3 {
+                position: relative;
+                top: 173px;
+                right: 549px;
+                width: 540px; height: 162px; margin-right: 12px;
+                background-image: url('layer.png'), url('coupon.png');
+                background-size: 100% 162px;
+                background-repeat: no-repeat;
+                overflow: hidden;
+            }
+
+            .event4 {
+                float: right;
+                margin-top: -335px;
+                width: 540px; height: 573px;
+                background-image: url('layer.png'), url('winterevent.png');
+                background-size: 100%;
+                overflow: hidden;
+            }
+
+            .banner{
+                display: none; 
+            }
+
+            .event1 h1, .event2 h1, .event3 h1 {
+                position: relative;
+                top: 110px; left: 15px;
+                color: rgb(87, 113, 231);
+                text-shadow: 1px 1px 1px #fff;
+            }
+
+            .event4 h1 {
+                position: relative;
+                top: 460px; left: 15px;
+                color: rgb(87, 113, 231);
+                text-shadow: 1px 1px 1px #fff;
+            }
+
+            .event1 h1:hover, .event2 h1:hover, .event3 h1:hover, .event4 h1:hover {
+                color: #fff;
+                text-shadow: 1px 1px 1px rgb(87, 113, 231);
+                
+            }
+
+            .icon {
+                float: left; margin-left: 888px; margin-top: 45px;
+                height: 110px; width: 770px;
+            }
+
+            .icon1, .icon2, .icon3, .icon4 {
+                float: left; border-radius: 15px;
+                width: 80px; height: 80px; margin-bottom: 12px; margin-right: 85px;
+                background-color: #9698be;
+                border: solid 3px #000;
+                overflow: hidden;
+            }
+
+            .icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover, .icon5:hover {
+                border: solid 3px rgb(87, 113, 231);
+            }
+
+            .icon1 img, .icon2 img, .icon3 img, .icon4 img, .icon5 img {
+                margin-left: 3px;
+                margin-top: 3px;
+            }
+
+            .icon5 {
+                float: left; border-radius: 15px;
+                width: 80px; height: 80px; margin-bottom: 12px;
+                background-color: #9698be;
+                border: solid 3px #000;
+                overflow: hidden;
+            }
+
+            .iconinfo1, .iconinfo2, .iconinfo3, .iconinfo4 {
+                position: relative;
+                top: -12px;
+                float: left; margin-right: 86px;
+                height: 30px; width: 85px;
+            }
+
+            .iconinfo5 {
+                position: relative;
+                top: -12px;
+                float: left;
+                height: 30px; width: 85px;
+            }
+
+            h4 {
+                margin-top: 5px;
+                text-align: center;
+            }
+
+            .address {
+                clear: both;
+                float: left;
+                margin-left: 715px; margin-top: 80px;
+            }
+
+            .address hr {
+                width: 1120px;
+                margin-bottom: 10px;
+            }
+
+            .address p {
+                margin-bottom: 10px;
+            }
+
+            .Ticket {
+                position: fixed;
+                z-index: 5;
+                background: rgb(87, 113, 231);
+                right: 40px; bottom: 40px;
+                width: 200px; height: 200px;
+                border-radius: 50% 50%;
+            }
+
+            .Ticket:hover {
+                color: #000;
+            }
+
+            .Ticket h1 {
+                margin-top: 47px;
+                text-align: center;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 700;
+                font-size: 40px;
+            }
+    
+            summary {
+                cursor: pointer;
+                list-style: none;
+                color: gray;
+
+            }
+
+            summary:hover {
+                color: #fff;
+                text-shadow: 1px 1px 1px rgb(87, 113, 231);
+
+            }
+
+            summary::-webkit-details-marker {
+                display: none;
+            }
+
+            .box {
+                text-align: center;
+            }
+
+            .box:hover {
+                border-bottom-style: solid;
+                border-bottom-width: 1px;
+                border-bottom-color: gray;
+            }
+
+            .hidden {
+                width: 100px;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+
+            .hidden a {
+                color: gray;
+            }
+
+            .hidden a:hover {
+                color: #fff;
+            }
+
+            details {
+                position: relative;
+            }
+
+            details[open] summary {
+                width: 100px; height: 80px;
+                margin-right: 0px;
+            }
+
+            .container video {
+                z-index: 1;
+                position: absolute;
+                top: 100px;
+                float: left;
+                margin-left: 580px;
+            }
+
+            .ALLmenu {
+                display: none;
+                position: absolute;
+                z-index: 3;
+                width: 1230px; height: 780px;
+                background-color: rgb(87, 113, 231);
+                opacity: 95%;
+                top: 0px;  left: 650px;
+            }
+
+            .ALLmenu:target {
+                display: block;
+            }
+
+            .menu1, .menu2, .menu3 {
+                float: left;
+                width: 277px; height: 320px;
+                margin-top: 100px; margin-right: 40px; margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .menu4 {
+                float: left;
+                width: 277px; height: 320px;
+                margin-top: 100px; margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .menu5, .menu6, .menu7 {
+                float: left;
+                width: 277px; height: 320px;
+                margin-right: 40px;
+                text-align: center;
+            }
+
+            .menu8 {
+                float: left;
+                width: 277px; height: 320px;
+                margin-bottom: 40px;
+
+                text-align: center;
+            }
+
+            .ALLmenu h1 {
+                margin-bottom: 10px;
+                border-bottom: solid 1px #000;
+            }
+
+            .ALLmenu h2 {
+                margin-bottom: 5px;
+            }
+
+            .cancel {
+                position: absolute;
+                top: 100px; left: 1185px;
+            }
+
+            /* 반응형 모바일 웹 */
+            @media (max-width : 767px) {
+            .container {
+                width: 768px; height: 900px;
+                overflow: hidden;
+                background: rgb(32, 32, 37);
+            }
+
+            .Logo {
+                margin-top: 22px;
+                margin-left: 290px;
+            }
+
+            .Logo:hover {
+                color: #000;
+            }
+            
+            .top ul {
+                display: none;
+            }
+
+            ul {
+                margin-right: 0px;
+                float: left;
+            }
+
+            summary {
+                float: right;
+            }
+
+            ul:nth-child(2) {
+                position: relative;
+                margin-right: 0px;
+                display: none
+            }
+
+            li {
+                position: absolute;
+                float: left;
+                list-style: none;
+                top: -2px;
+                left: 36px;
+            }
+
+            .menuimg {
+                position: relative;
+                left: 700px;
+                margin-top: 25px;
+            }
+
+            .right {
+                position: relative;
+                z-index: 4;
+                background-color: rgb(87, 113, 231);
+                margin-right: 45px;
+
+            }
+
+            .Search {
+                display: none;
+            }
+
+            .Searchingtext {
+                display: none;
+            }
+
+            input {
+                display: none;
+            }
+
+            
+            .container video {
+                position: absolute;
+                width: 768px;
+                margin: 0px;
+            }
+
+        
+            .Cinema {
+                position: absolute;
+                z-index: 2;
+                margin-top: 470px;
+                margin-left: 60px;
+                width: 760px; height: 400px;
+                overflow: hidden;
+            }
+
+
+            .Cinema1, .Cinema2, .Cinema3 {
+                position: relative;
+                z-index: 2;
+                float: left; 
+                width: 187.5px; height: 270px;
+                background-color: #000;
+                overflow: hidden;
+            }
+
+            .Cinema4, .Ticketing4 {
+                display: none;
+            }
+
+            .imgtext {
+                position: relative;
+                top: 100px;
+                width: 187.5px; height: 200px;
+                color: #fff;
+                text-align: center;
+                font-size: 13px;
+            }
+
+            .Cinema1 img, .Cinema2 img, .Cinema3 img {
+                position: relative;
+                width: 187.5px; height: 270px;
+            }
+
+            .Ticketing {
+                float: left; margin: 0;
+                margin-top: 10px;
+                height: 50px; width: 760px;
+            }
+
+            .Ticketing1, .Ticketing2, .Ticketing3 {
+                float: left;
+                width: 187.5px; height: 40px;
+                background-color: rgb(87, 113, 231);
+                text-align: center;
+            }
+
+            .Ticketing1 > h3, .Ticketing2 > h3, .Ticketing3 > h3, .Ticketing4 > h3 {
+                margin-top: 9px;
+                color: #000;
+            }
+
+            .Ticketing1:hover, .Ticketing2:hover, .Ticketing3:hover,.Ticketing4:hover {
+                background-color: white;
+            }
+
+            .Ticketing1 h3:hover, .Ticketing2 h3:hover, .Ticketing3 h3:hover, .Ticketing4 h3:hover {
+                color: rgb(87, 113, 231);
+            }
+
+            .event {
+                float: left; margin-left: 30px; margin-top: 20px;
+                height: 300px; width: 707px;
+                overflow: hidden;
+            }
+            .event1 {
+                width: 707px; height: 130px; margin-bottom: 15px;
+                background-image: url('layer.png'), url('M이벤트_1.jpg');
+                background-size: 100%;
+                overflow: hidden;
+            }
+
+            .event2 {
+                float: left;
+                width: 458px; height: 155px; margin-right: 15px;
+                background-image: url('layer.png'), url('이벤트_2.png');
+                background-size: 100%;
+                overflow: hidden;
+            }
+            .event3 {
+                position: relative;
+                top: 0px;
+                right: 0px;
+                width: 229px; height: 155px;
+                background-image: url('layer.png'), url('coupon.png');
+                background-size: 100% 162px;
+                background-repeat: no-repeat;
+                overflow: hidden;
+            }
+
+            .event4 {
+                display: none;
+            }
+
+            .banner {
+                display: block;
+                position: absolute;
+                z-index: 3;
+                float: left;
+                top: 60px;
+                width: 767px; height: 150px;
+                overflow: hidden;
+            }
+
+            .event1 h1 {
+                position: relative;
+                top: 80px; left: 14px;
+                color: rgb(87, 113, 231);
+                text-shadow: 1px 1px 1px #030303;
+            } 
+
+            .event2 h1, .event3 h1 {
+                position: relative;
+                top: 104px; left: 14px;
+                color: rgb(87, 113, 231);
+                text-shadow: 1px 1px 1px #fff;
+            }
+
+            .event4 h1 {
+                position: relative;
+                top: 460px; left: 15px;
+                color: rgb(87, 113, 231);
+                text-shadow: 1px 1px 1px #fff;
+            }
+
+            .event1 h1:hover, .event2 h1:hover, .event3 h1:hover, .event4 h1:hover {
+                color: #fff;
+                text-shadow: 1px 1px 1px rgb(87, 113, 231);
+                
+            }
+
+            .icon {
+                float: left; margin-left: 20px; margin-top: 25px;
+                height: 110px; width: 727px;
+            }
+
+            .icon1, .icon2, .icon3 {
+                float: left; border-radius: 15px;
+                width: 80px; height: 80px; margin-bottom: 12px; margin-right: 74px;
+                background-color: #9698be;
+                border: solid 3px #000;
+                overflow: hidden;
+            }
+
+            .icon4 {
+                float: left; border-radius: 15px;
+                width: 80px; height: 80px; margin-bottom: 12px;
+                background-color: #9698be;
+                border: solid 3px #000;
+                overflow: hidden;
+            }
+
+            .icon5 {
+                position: absolute;
+                left: 660px;
+                float: left; border-radius: 15px;
+                width: 80px; height: 80px; margin-bottom: 12px;
+                background-color: #9698be;
+                border: solid 3px #000;
+                overflow: hidden;
+            }
+
+            .icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover, .icon5:hover {
+                border: solid 3px rgb(87, 113, 231);
+            }
+
+            .icon1 img, .icon2 img, .icon3 img, .icon4 img, .icon5 img {
+                margin-left: 3px;
+                margin-top: 3px;
+            }
+
+            .iconinfo1 {
+                position: relative;
+                top: -12px;
+                float: left; margin-left: 2px; margin-right: 82px;
+                height: 30px; width: 80px;
+            }
+
+            .iconinfo2 {
+                position: relative;
+                top: -12px;
+                float: left; margin-right: 82px;
+                height: 30px; width: 80px;
+            }
+
+            .iconinfo3 {
+                position: absolute;
+                top: 1328px; left: 344px;
+                height: 30px; width: 80px;
+            }
+
+            .iconinfo4 {
+                position: absolute;
+                top: 1328px; left: 503px;
+                height: 30px; width: 80px;
+            }
+
+            .iconinfo5 {
+                position: absolute;
+                top: 1328px; left: 662px;
+                height: 30px; width: 85px;
+            }
+
+            h4 {
+                margin-top: 5px;
+                text-align: center;
+            }
+
+            .address {
+                display: none;
+            }
+
+            .address hr {
+                display: none;
+            }
+
+            .address p {
+                display: none;
+            }
+
+            .Ticket {
+                position: fixed;
+                z-index: 5;
+                background: rgb(87, 113, 231);
+                right: 40px; bottom: 40px;
+                width: 150px; height: 150px;
+                border-radius: 50% 50%;
+            }
+
+            .Ticket:hover {
+                color: #000;
+            }
+
+            .Ticket h1 {
+                margin-top: 30px;
+                text-align: center;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+            }
+    
+
+            /* 하단부 메뉴 */
+
+            .box {
+                bottom: 0px;
+                text-align: center;
+                font-size: 25px
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            .hidden a {
+                display: none;
+            }
+
+            .hidden a:hover {
+                display: none;
+            }
+
+            details {
+                position: relative;
+            }
+
+            details[open] summary {
+                width: 69px; height: 0px;
+                margin-right: 0px;
+            }
+
+            .container video {
+                z-index: 1;
+                position: absolute;
+                top: 35px;
+                float: left;
+            }
+
+            .ALLmenu {
+                display: none;
+                position: absolute;
+                z-index: 4;
+                width: 450px; height: 900px;
+                background-color: rgb(87, 113, 231);
+                opacity: 95%;
+                top: 0px; left: 318px;
+                overflow: scroll;
+            }
+
+            .menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8 {
+                margin: 0;
+                margin-top: 100px; margin-left: 22px;
+                float: left;
+                width: 120px; height: 200px;
+                text-align: center;
+            }
+
+            .ALLmenu h1 {
+                margin-bottom: 10px;
+                border-bottom: solid 1px #000;
+                font-size: 25px;
+            }
+
+            .ALLmenu h2 {
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+
+            .right {
+                position: relative;
+                z-index: 3;
+                background-color: rgb(87, 113, 231);
+
+            }
+
+            .menu {
+                position: absolute;
+                z-index: 5;
+                margin-top: 1300px;
+                width: 768px; height: 80px;
+                background: rgb(87, 113, 231);
+            }
+
+            summary {
+                list-style: none;
+                color: black;
+
+            }
+
+            summary:hover {
+                color: #fff;
+                text-shadow: 1px 1px 1px rgb(87, 113, 231);
+            }
+
+            summary::-webkit-details-marker {
+                display: none;
+            }
+
+            .cancel {
+                position: absolute;
+                top: 25px; left: 383px;
+            }
+            } 
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+
+            <div class="top">
+                <a href="#"><h1 class="Logo">MARGARINE</h1></a>
+                <ul>
+                    <li class="info"><a href="#">로그인</a></li>
+                    <li class="info"><a href="#">회원가입</a></li>
+                    <li class="info"><a href="#">마이페이지</a></li>
+                    <li class="info"><a href="#">고객센터</a></li> 
+                </ul>
+                <a href="#ALLmenu"><img class="menuimg" src="menu.png" width="30px" height="30px"></a>
+            </div>    
+
+            <div class="ALLmenu" id="ALLmenu">
+                <a href="#"><img class="cancel" src="cancel.png" width="30px" height="30px"></a>
+                <div class="menu1">
+                    <h1>영화</h1>
+                    <a href="#"><h2>전체영화</h2></a>
+                    <a href="#"><h2>무비차트</h2></a>
+                    <a href="#"><h2>현재상영작</h2></a>
+                    <a href="#"><h2>상영예정작</h2></a>
+                </div>
+
+                <div class="menu2">
+                    <h1>예매</h1>
+                    <a href="#"><h2>빠른예매</h2></a>
+                    <a href="#"><h2>상영시간표</h2></a>
+                </div>
+
+                <div class="menu3">
+                    <h1>영화관</h1>
+                    <a href="#"><h2>전체극장</h2></a>
+                    <a href="#"><h2>특별관</h2></a>
+                </div>
+
+                <div class="menu4">
+                    <h1>스페셜관</h1>
+                    <a href="#"><h2>슈퍼마가린</h2></a>
+                    <a href="#"><h2>울트라마가린</h2></a>
+                    <a href="#"><h2>베스트마가린</h2></a>
+                </div>
+
+                <div class="menu5">
+                    <h1>마이</h1>
+                    <a href="#"><h2>결제내역</h2></a>
+                    <a href="#"><h2>쿠폰함</h2></a>
+                    <a href="#"><h2>정보관리</h2></a>
+                </div>
+
+                <div class="menu6">
+                    <h1>혜택</h1>
+                    <a href="#"><h2>포인트</h2></a>
+                    <a href="#"><h2>신용카드</h2></a>
+                    <a href="#"><h2>통신사</h2></a>
+                </div>
+
+                <div class="menu7">
+                    <h1>회사소개</h1>
+                    <a href="#"><h2>마가린소개</h2></a>
+                    <a href="#"><h2>사회공헌</h2></a>
+                    <a href="#"><h2>홍보자료</h2></a>
+                    <a href="#"><h2>인재채용</h2></a>
+                </div>
+
+                <div class="menu8">
+                    <h1>이용정책</h1>
+                    <a href="#"><h2>이용약관</h2></a>
+                    <a href="#"><h2>위치서비스</h2></a>
+                    <a href="#"><h2>개인정보처리방침</h2></a>
+                </div>
+            </div>
+
+            <div class="banner"><a href="#"><img src="topevent.png" width="767px" height="150px"></a></div>
+
+            <div class="menu">
+                <ul>
+                    <li class="right">
+                        <details>
+                            <summary><div class="box">스토어</div></summary>
+                                <div class="hidden_box"><p class="hidden"><a href="#">베스트</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">관람권</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">스낵음료</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">포토카드</a></p></div>
+                        </details>
+                    </li>
+                        
+                    <li class="right">
+                        <details>
+                            <summary><div class="box">이벤트</div></summary>
+                                <div class="hidden_box"><p class="hidden"><a href="#">스페셜</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">멤버십</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">제휴할인</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">시사회</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">당첨자발표</a></p></div>
+                        </details>
+                    </li>
+
+                    <li class="right">
+                        <details>
+                            <summary><div class="box">영화관</div></summary>
+                                <div class="hidden_box"><p class="hidden"><a href="#">전체극장</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">특별관</a></p></div>
+                        </details>
+                    </li>
+
+                    <li class="right">
+                        <details>
+                            <summary><div class="box">예매</div></summary>
+                                <div class="hidden_box"><p class="hidden"><a href="#">빠른예매</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">상영시간표</a></p></div>
+                        </details>
+                    </li>
+
+                    <li class="right">
+                        <details>
+                            <summary><div class="box">영화</div></summary>
+                                <div class="hidden_box"><p class="hidden"><a href="#">전체영화</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">무비차트</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#"><a href="#">현재상영작</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">상영예정작</a></p></div>
+                        </details>
+                    </li>
+
+                    <li class="right">
+                        <details>
+                            <summary><div class="box">혜택</div></summary>
+                                <div class="hidden_box"><p class="hidden"><a href="#">할인정보</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">멤버십</a></p></div>
+                                <div class="hidden_box"><p class="hidden"><a href="#">M서비스</a></p></div>
+                        </details>
+                    </li>
+                </ul>
+
+                <img class="Search" src="Search.png" width="40px" height="40px" >
+                <form>
+                    <table>
+                        <tr>
+                            <td><input type="text" class="Searchingtext" placeholder="  검색어를 입력하세요."></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+    
+            <div class="Cinema">
+                <div class="Cinema1">
+                    <div class="imgtext">
+                        <h2>&lt; 서울의 봄 &gt;</h2>
+                        <h4>목숨을 건 두 세력의 팽팽한 대립<br>
+                            오늘 밤, 대한민국 수도에서<br>
+                            가장 치열한 전쟁이 펼쳐진다!<br>
+                            ★ 5
+                    </h4></div>
+                    <img src="Seoul.png" width="260px" height="360px">
+                </div>
+
+                <div class="Cinema2">
+                    <div class="imgtext">
+                        <h2>&lt; 싱글 인 서울 &gt;</h2>
+                        <h4>서울, 혼자가 좋지만 연애는<br>
+                            하고 싶은 두 남녀의<br>
+                            싱글 라이프가 시작된다!<br>
+                            ★ 4
+                    </h4></div>
+                    <img src="Single.png" width="260px" height="360px">
+                </div>
+
+                <div class="Cinema3">
+                    <div class="imgtext">
+                        <h2>&lt; 괴물 &gt;</h2>
+                        <h4>“우리 동네에는 괴물이 산다”<br>
+                        ★ 4.5
+                    </h4></div>
+                    <img src="Monster.png" width="260px" height="360px">
+                </div>
+
+                <div class="Cinema4">
+                    <div class="imgtext">
+                        <h2>&lt; 나폴레옹 &gt;</h2>
+                        <h4>세상을 정복한 영웅<br>
+                            아무것도 갖지 못한 황제,<br>
+                            ‘나폴레옹’의 대서사가 펼쳐진다!
+                    </h4></div>
+                    <img src="Napoleon.png" width="260px" height="360px">
+                </div>
+
+                <div class="Ticketing">
+                    <a href="#">
+                    <div class="Ticketing1" onclick="alert('로그인이 필요한 서비스 입니다.')">
+                        <h3>예매</h3>
+                    </div></a>
+
+                    <a href="#">
+                    <div class="Ticketing2" onclick="alert('로그인이 필요한 서비스 입니다.')">
+                        <h3>예매</h3>
+                    </div></a>
+
+                    <a href="#">
+                    <div class="Ticketing3" onclick="alert('로그인이 필요한 서비스 입니다.')">
+                        <h3>예매</h3>
+                    </div></a>
+
+                    <a href="#">
+                    <div class="Ticketing4" onclick="alert('로그인이 필요한 서비스 입니다.')">
+                        <h3>예매</h3>
+                    </div></a>
+                </div>
+
+            </div>
+
+            <video src="SeoulMP4.mp4" muted autoplay loop height="780px"></video>
+        </div>
+
+        <div class="event">
+            <div class="event1"><a href="#"></a><h1>할인</h1></a></div>
+            <div class="event2"><a href="#"></a><h1>혜택</h1></a></div>
+            <div class="event3"><a href="#"></a><h1>패키지</h1></a></div>
+            <div class="event4"><a href="#"></a><h1>이벤트</h1></a></div>
+        </div>
+
+        <div class="icon">
+            <div class="icon1"><a href="#"><img src="icon1.png" width="75px" height="75px"></a></div>
+            <div class="icon2"><a href="#"><img src="icon2.png" width="75px" height="75px"></a></div>
+            <div class="icon3"><a href="#"><img src="icon3.png" width="75px" height="75px"></a></div>
+            <div class="icon4"><a href="#"><img src="icon4.png" width="75px" height="75px"></a></div>
+            <div class="icon5"><a href="https://naver.me/57rT7PXI"><img src="icon5.png" width="75px" height="75px"></a></div>
+
+            <div class="iconinfo1">
+                <h4>멤버십</h4>
+            </div>
+
+            <div class="iconinfo2">
+                <h4>대관 문의</h4>
+            </div>
+
+            <div class="iconinfo3">
+                <h4>Q & A</h4>
+            </div>
+
+            <div class="iconinfo4">
+                <h4>포인트</h4>
+            </div>
+
+            <div class="iconinfo5">
+                <h4>위치</h4>
+            </div>
+        </div>
+
+        <div class="address">
+            <hr>
+            <p>인천광역시 계양구 계양산로63(계산동 548-4) 0123-4567<br>
+                MARGARINE · KKK · JHR <br>
+                Copyright © MARGARINE All Right Reserved.</p>
+        </div>
+
+        <a href="#"><div class="Ticket">
+            <h1>빠른<br>예매</h1>
+        </div></a>
+    </body>
+</html>
